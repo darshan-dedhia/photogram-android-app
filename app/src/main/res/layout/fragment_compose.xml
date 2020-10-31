@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ComposeFragment">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="349dp"
+        android:layout_height="282dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="19dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="349dp"
+        android:layout_height="91dp"
+        android:layout_below="@+id/ivPhoto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description_here"
+        android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:id="@+id/ibtnUpload"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/etDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="101dp"
+        android:background="#FBFBFB"
+        android:src="@drawable/ic_upload" />
+
+    <ImageButton
+        android:id="@+id/ibtnCapture"
+        android:layout_width="84dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/etDescription"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="67dp"
+        android:layout_toStartOf="@+id/ibtnUpload"
+        android:background="#FBFBFB"
+        android:src="@drawable/ic_photo_camera" />
+
+</RelativeLayout>
